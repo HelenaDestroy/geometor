@@ -33,7 +33,7 @@ const inp1 = input1.value;
 const inp2 = input2.value; 
 const inp3 = input3.value;
 const area = perimetroTriangulo(inp1, inp2, inp3);
-alert ("The area of the Triangle is:"+ area + "cm²");
+alert ("The perimeter of the Triangle is:"+ area + "cm²");
 }
 
 function areaTriangulo(base, altura){
@@ -64,7 +64,6 @@ const inp4 = input4.value;
 
 
 const PI = Math.PI;
-
 function diametroCirculo(radio){  
   return (radio * 2);
     }

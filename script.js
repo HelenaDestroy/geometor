@@ -1,3 +1,4 @@
+//cuadrado
 function perimetroCuadrado(lado) 
 { 
   return lado * 4;
@@ -18,10 +19,12 @@ const value = input.value;
 const area = areaCuadrado(value);
 alert ("The area of the Square is:"+ area + "cm²");
 } 
+//triangulo
 
 function perimetroTriangulo(lado1, lado2, base)
 {
-  return (lado1 + lado2 + base);
+  resultado = lado1 + lado2 + base
+  return resultado;
 }
  function calcularPerimetroTriangulo()
 {
@@ -33,7 +36,7 @@ const inp1 = input1.value;
 const inp2 = input2.value; 
 const inp3 = input3.value;
 const area = perimetroTriangulo(inp1, inp2, inp3);
-alert ("The perimeter of the Triangle is:"+ area + "cm²");
+alert ("The perimeter of the Triangle is:"+ area + "cm");
 }
 
 function areaTriangulo(base, altura){
@@ -46,38 +49,27 @@ const input3 =  document.getElementById("input3Base");
 const input4 =  document.getElementById("input4Altura");
 const inp3 = input3.value;
 const inp4 = input4.value;
-  const area = areaTriangulo(inp3, inp4);
-  alert ("The area of the Triangle is:"+ area + "cm²"); 
+const area = areaTriangulo(inp3, inp4);
+alert ("The area of the Triangle is:"+ area + "cm²"); 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+//circulo
 
 const PI = Math.PI;
 function diametroCirculo(radio){  
   return (radio * 2);
-    }
-    
+}
 
-    function perimetroCirculo(radio){
+
+ 
+
+function perimetroCirculo(radio){
         const diametro = diametroCirculo(radio);
         return diametro * PI;
     }
-      
-    
+
     function areaCirculo(radio)
     {
     return (Math.pow(radio, 2) * PI); 
   
-      }
- 
+      }      

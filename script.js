@@ -33,7 +33,7 @@ input2 =  document.getElementById("input2Lado");
 input3 =  document.getElementById("input3Base");
 
 const inp1 = parseInt(input1.value);
-const inp2 = parseInt(inpu2.value);
+const inp2 = parseInt(input2.value);
 const inp3 = parseInt(input3.value);
 const perimetro = perimetroTriangulo(inp1, inp2, inp3);
 alert ("The perimeter of the Triangle is:"+ perimetro + "cm");

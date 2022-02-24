@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometor</title>
+</head>
+ <body>   
+  <header>     
+        <h1>Geometry Calculator</h1> 
+        <p>Calculate areas and perimeters</p>
+    </header>
+    <main>
+    <section> 
+        <h2>Square</h2>
+        <form>    
+        <label for="inputCuadrado">Write the measures of the sides of the Square:</label>
+            <input type="number" id="inputCuadrado"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calculate the perimeter</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calculate the area</button>
+        </form>
+    </section>
+   
+     <section> 
+        <h2>Triangle</h2>
+        <form>    
+        <label for="inputTriangulo">Write the measures of the sides of the Triangle:</label>
+            <input type="number" id="inputTriangulo"/>
+            <button type="button" onclick="perimetroTriangulo()">Calculate the perimeter</button>
+            <button type="button" onclick="areaTriangulo()">Calculate the area</button>
+        </form>
+     </section>
+
+     <section> 
+        <h2>Circle</h2>
+        <form>    
+        <label for="inputCirculo">write the measures of the """diameter""" of the Circle:</label>
+            <input type="number" id="inputCirculo"/>
+            <button type="button" onclick="perimetroTriangulo()">Calculate the Radius</button>
+            <button type="button" onclick="perimetroTriangulo()">Calculate the area</button>
+        </form>
+     </section>
+         </main>
+    <footer>
+        <p class="p1">Coded by: <i>Helena des Troy</i>. You can see another repositories made by Helen <span><a href="https://github.com/HelenaDestroy?tab=repositories">here</a></span>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

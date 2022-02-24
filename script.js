@@ -2,11 +2,6 @@ function perimetroCuadrado(lado)
 { 
   return lado * 4;
 }
-function areaCuadrado(lado)
-{  return (lado * lado);
-    }
-
-
 function calcularPerimetroCuadrado() 
 { const input =  document.getElementById("inputCuadrado");
   const value = input.value;
@@ -14,32 +9,59 @@ function calcularPerimetroCuadrado()
   alert ("The perimeter of the Square is:"+ perimetro);
 }
 
+function areaCuadrado(lado)
+{  return (lado * lado);
+    }
 function calcularAreaCuadrado(){
 const input =  document.getElementById("inputCuadrado");
 const value = input.value;
 const area = areaCuadrado(value);
-alert ("The area of the Square is:"+ area);
-}
+alert ("The area of the Square is:"+ area + "cm²");
+} 
 
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
-const alturaTriangulo = 5.5;
-
-
-
-
-
-
-
-
-function perimetroTriangulo(ladot1, baset, ladot2)
+function perimetroTriangulo(lado1, lado2, base)
 {
-  return (ladot1, baset, ladot2);
+  return (lado1 + lado2 + base);
 }
-function areaTriangulo(baset, alturat){
-    return (baset * alturat) / 2;
+ function calcularPerimetroTriangulo()
+{
+input1 =  document.getElementById("input1Lado");
+input2 =  document.getElementById("input2Lado");
+input3 =  document.getElementById("input3Base");
+
+const inp1 = input1.value;
+const inp2 = input2.value; 
+const inp3 = input3.value;
+const area = perimetroTriangulo(inp1, inp2, inp3);
+alert ("The area of the Triangle is:"+ area + "cm²");
+}
+
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+}
+ 
+function calcularAreaTriangulo()
+{
+const input3 =  document.getElementById("input3Base");
+const input4 =  document.getElementById("input4Altura");
+const inp3 = input3.value;
+const inp4 = input4.value;
+  const area = areaTriangulo(inp3, inp4);
+  alert ("The area of the Triangle is:"+ area + "cm²"); 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const PI = Math.PI;
 

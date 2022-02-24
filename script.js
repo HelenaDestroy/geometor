@@ -9,7 +9,6 @@ function calcularPerimetroCuadrado()
   const perimetro = perimetroCuadrado(value)
   alert ("The perimeter of the Square is: "+ perimetro + " cm");
 }
-
 function areaCuadrado(lado)
 {  return (lado * lado);
     }
@@ -32,7 +31,7 @@ lad1 =  document.getElementById("input1Lado");
 lad2 =  document.getElementById("input2Lado");
 const inp1 = parseInt(lad1.value);
 const inp2 = parseInt(lad2.value);
-const altura = calcularAlturaTriangulo(inp1,inp2);
+const altura = calcularAlturaTriangulo(value);
 alert ("The height of the Triangle is: "+ altura + " cm²"); 
 }
 function perimetroTriangulo(lado1, lado2, base)

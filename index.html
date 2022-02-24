@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometor</title>
+    <link rel="stylesheet" href="style.css"/>
+
 </head>
  <body>   
   <header>     
         <h1>Geometry Calculator</h1> 
         <p>Calculate areas and perimeters</p>
     </header>
-    <main>
-    <section> 
+    <main class="main">
+    <section class="section1"> 
         <h2>Square</h2>
         <form>    
         <label for="inputCuadrado">Write the measures of any side of the Square:</label>
@@ -24,28 +26,30 @@
         </form>
     </section>
    
-     <section> 
+    <section class="section2"> 
         <h2>Triangle</h2>
-        <p>For this operation, you will need to know the measures of the three sides and height of the Triangle:</p>
+        <p>For this operation, you need to know the measures of the three sides of the Triangle</p>
         <br/>
         <form>    
         <label for="input1Lado">Write the measure of one side of the Triangle (side 1):</label>
             <input type="number" id="input1Lado"/>
-            <br/><label for="input2Lado">Write the measure of another side of the Triangle (side 2):</label>
+            <br/>
+        <label for="input2Lado">Write the measure of another side of the Triangle (side 2):</label>
             <input type="number" id="input2Lado"/>
             <br/>
-            <label for="input3Base">Write the measure of the base of the Triangle(side 3):</label>
+        <label for="input3Base">Write the measure of the base of the Triangle(side 3):</label>
             <input type="number" id="input3Base"/>
             <br/>
-            <label for="input4Altura">Write the measure of the height of the Triangle:</label>
-            <input type="number" id="input4Altura"/>
+        <button type="button" onclick="calcularPerimetroTriangulo()">Calculate the perimeter</button>
+        <button type="button" onclick="calcularAreaTriangulo()">Calculate the area</button>
+            <br>
+            <br/><label for="height">You can also get the Height of a Isosceles Triangle, click here:</label>
+            <button type="button" onclick="calcularAlturaTriangulo()">Calculate the Height</button>
             <br/>
-            <button type="button" onclick="calcularPerimetroTriangulo()">Calculate the perimeter</button>
-            <button type="button" onclick="calcularAreaTriangulo()">Calculate the area</button>
         </form>
      </section>
 
-     <section> 
+     <section class="section3"> 
         <h2>Circle</h2>
         <form>    
         <label for="inputRadio">write the measure of the Radius of the Circle:</label><br/>
@@ -54,6 +58,7 @@
             <button type="button" onclick="calcularDiametroCirculo()">Calculate the Diameter</button>
             <br/>
             <button type="button" onclick="calcularPerimetroCirculo()">Calculate the Perimeter</button>
+            <br/>
             <button type="button" onclick="calcularAreaCirculo()">Calculate the Area</button>
         </form>
      </section>

@@ -39,19 +39,49 @@ const perimetro = perimetroTriangulo(inp1, inp2, inp3);
 alert ("The perimeter of the Triangle is: "+ perimetro + " cm");
 }
 
-function areaTriangulo(base, altura){
-    return (base * altura) / 2;
-}
- 
+
 function calcularAreaTriangulo()
 {
 const input3 =  document.getElementById("input3Base");
-const input4 =  document.getElementById("input4Altura");
+const altura = AlturaTriangulo(value);
 const inp3 = parseInt(input3.value);
-const inp4 = parseInt(input4.value);
-const area = areaTriangulo(inp3, inp4);
+const area = areaTriangulo(inp3, altura);
 alert ("The area of the Triangle is: "+ area + " cm²"); 
-    }
+}
+  
+function alturaTriangulo(lado1,lado2)
+{
+return Math.sqrt ((Math.pow (lado1, 2) ) - (lado2 / 4) ) 
+}
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+
+}
+
+function calcularAlturaTriangulo(lado1, lado2)
+{
+input1 =  document.getElementById("input1Lado");
+input2 =  document.getElementById("input2Lado");
+const inp1 = parseInt(input1.value);
+const inp2 = parseInt(input2.value);
+const altura = calcularAlturaTriangulo(inp1,inp2);
+    alert ("The height of the Triangle is: "+ altura + " cm²"); 
+}
+
+
+
+
+
+// if (lado1 = lado2 = base: false){
+// function alturaTriangulo(lado1,lado2,base);
+    // <label for="input4Altura">Write the measure of the height of the Triangle:</label>
+    //         <input type="number" id="input4Altura"/>
+
+
+
+
+
+
 
 //circulo 
 

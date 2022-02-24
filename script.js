@@ -56,26 +56,37 @@ alert ("The area of the Triangle is:"+ area + "cm²");
 //circulo EN PROCESO
 
 const PI = Math.PI;
+const diametro = diametroCirculo(value)
+const radio;
+
 function diametroCirculo(radio){  
-  return (radio * 2);
+return (radio * 2);
 }
 function calcularDiametroCirculo()
 {  
-  const input =  document.getElementById("inputCuadrado");
-  const value = input.value;
-  const perimetro = perimetroCuadrado(value)
-  alert ("The perimeter of the Square is:"+ perimetro);
-  return (radio * 2);
-  }
+  const input =  document.getElementById("inputRadio");
+  const value = parseInt(input.value);
+  alert ("The diameter of the Circle is:"+ diametro);
+ }
  
-
 function perimetroCirculo(radio)
 {
-        const diametro = diametroCirculo(radio);
-        return diametro * PI;
-    }
+  const diametro = diametroCirculo(radio);
+  return diametro * PI;
+}
+function calcularPerimetroCirculo()
+{ 
+  const diametro = diametroCirculo(value)
+  alert ("The diameter of the Circle is:"+ diametro);
+}
+  
+function areaCirculo(radio)
+{
+  return (Math.pow(radio, 2) * PI); 
+}  
 
-    function areaCirculo(radio)
-    {
-    return (Math.pow(radio, 2) * PI); 
-     }  
+function calcularAreaCirculo()
+{
+  areaCirculo(value)
+  alert ("The area of the Circle is:"+ area + "cm²");
+}  

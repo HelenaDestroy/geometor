@@ -1,0 +1,2 @@
+# geometor
+A geometry calculator

@@ -31,7 +31,7 @@ lad1 =  document.getElementById("input1Lado");
 lad2 =  document.getElementById("input2Lado");
 const inp1 = parseInt(lad1.value);
 const inp2 = parseInt(lad2.value);
-const altura = calcularAlturaTriangulo(value);
+const altura = alturaTriangulo();
 alert ("The height of the Triangle is: "+ altura + " cm²"); 
 }
 function perimetroTriangulo(lado1, lado2, base)
@@ -66,7 +66,6 @@ alert ("The area of the Triangle is: "+ area.toFixed(3) + " cm²");
   
 function areaTriangulo(base, altura){
     return (base * altura) / 2;
-
 }
 
 
